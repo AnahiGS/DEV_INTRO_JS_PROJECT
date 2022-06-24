@@ -1,0 +1,79 @@
+.body{
+    color: #fff;
+}
+
+.container_fondo{
+    background:url('./overlay.png') ,url('otono.jpg') ;
+    height: 100vh;
+    width:100%;
+    background-position: top;
+    background-size: cover;
+}
+
+.container_small{
+    margin-top: 25px;
+    width: 395px;
+    text-align:center;
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+
+}
+
+.container_medium{
+    margin-top: 25px;
+    width: 600px;
+    text-align:center;
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+
+}
+
+#atm{
+    font-size: 50px;
+}
+
+#saldo,#retirar,#ingresar{
+    cursor: pointer;
+    transition:transform 0.3s ease;
+}
+
+#saldo::after, #saldo::before{
+    position: absolute;
+    opacity: 0.3;
+    background-color: aqua;
+    width:100%;
+    height: 100%;
+    z-index:1;
+    transition:transform 0.3s ease;
+}
+
+
+#retirar::after, #retirar::before{
+    position: absolute;
+    opacity: 0.3;
+    background-color: aqua;
+    width:100%;
+    height: 100%;
+    z-index:1;
+    transition:transform 0.3s ease;
+}
+
+#ingresar::after, #ingresar::before{
+    position: absolute;
+    opacity: 0.3;
+    background-color: aqua;
+    width:100%;
+    height: 100%;
+    z-index:1;
+    transition:transform 0.3s ease;
+}
+
+#saldo:hover, #retirar:hover, #ingresar:hover{
+    transform: translate(-12px, -12px);
+
+}
+
+#saldo:hover::after, #retirar:hover::after, #ingresar:hover::after{
+    transform: translate(10px, 10px);   
+}
+

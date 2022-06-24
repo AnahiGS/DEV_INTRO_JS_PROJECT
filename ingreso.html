@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATM simulator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<header>
+    <div class="container mt-5 text-white">
+        <div class="col-12 d-flex align-content-center justify-content-center ">
+            <h1>Digite la cantidad deseada</h1> 
+        </div>
+    </div>
+</header>
+<body class="container_fondo">
+        <div class="container mt-5 text-white">
+            <div class="col-12 d-flex align-content-center justify-content-center ">        
+                <h3>Su cuenta debe tener un monto mayor que $10 y menor que $990</h3>
+            </div>
+        </div>
+    <div class="container_small position-absolute top-50 start-50 translate-middle">
+        <div class="container my-5  justify-content-center align-items-center text-white">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="mb-3">
+                        <input type="text" id="monto" placeholder="0"><br>
+                        <button class="btn btn-outline-light" id="btn_num" onclick="num_1()">1</button>
+                        <button class="btn btn-outline-light" id="btn_num" onclick="num_2()">2</button>
+                        <button class="btn btn-outline-light" id="btn_num" onclick="num_3()">3</button><br>
+                        <button class="btn btn-outline-light" id="btn_num" onclick="num_4()">4</button> 
+                        <button class="btn btn-outline-light" id="btn_num" onclick="num_5()">5</button>
+                        <button class="btn btn-outline-light" id="btn_num" onclick="num_6()">6</button><br>
+                        <button class="btn btn-outline-light" id="btn_num" onclick="num_7()">7</button>
+                        <button class="btn btn-outline-light" id="btn_num" onclick="num_8()">8</button>
+                        <button class="btn btn-outline-light" id="btn_num" onclick="num_9()">9</button><br>
+                        <button class="btn btn-outline-light" id="btn_num" onclick="num_0()">0</button>
+                        <button class="btn btn-outline-light" id="btn_borrar1" onclick="borrar1()">Borrar</button>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-12">
+                    <a href="./opciones.html" id="opciones">
+                        <input onclick=regresar() type="button" value='Regresar'></input>
+                    </a>
+                    <!--este boton tendrá que activarse solo cuando ya haya ingresado la cantidad y le de click-->
+                    <input onclick=ing() type="button" value='Continuar' id="btn_continuar1"></input>
+                </div>       
+            </div>
+        </div>
+    </div>  
+
+    <script src="./javascript/usuarios.js"></script>
+    <script src="./javascript/codeOpciones.js"></script>
+    <script src="./javascript/digitarmontoi.js"></script>
+</body>
+</html>
